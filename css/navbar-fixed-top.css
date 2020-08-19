@@ -212,3 +212,12 @@ img {
   background-color: #fff;
   box-shadow: 0 0.125rem 0.125rem 0 #bbb;
 }
+
+.nav-item {
+  width:max-content;
+  padding: 10px;
+}
+
+.nav-link {
+  text-align: center;
+}
