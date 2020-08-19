@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link href="css/navbar-fixed-top.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 	<title>Visual Machines Group</title>
 </head>
@@ -172,21 +173,7 @@
 		</div>
 	</div>
 
- 	<footer class="footer">
-	  <div class="container-fluid bg-dark">
-	    <!-- <span class="text-muted">Place sticky footer content here.</span> -->
-	    <div class="row">
-	      <div class="col-md-6">
-	        <div class="logo"><a href="index.htm"><img src="img/headerwhite.svg" class="img-responsive d-none d-md-none d-lg-block" alt="Logo"></a></div>
-	      </div>
-	      <div class="col-md-6" style="padding-top: 25px;">
-	        <div class="sub-heading white">Get In Touch.</div>
-	        <div class="body white"><a href="mailto:achuta@ucla.edu" class="white">achuta@ucla.edu</a></div>
-	        <br>
-	      </div>
-	    </div>
-	  </div>
-	</footer>
+	<div id="footer-placeholder"></div>
 
 
     <!-- Bootstrap core JavaScript
@@ -200,6 +187,7 @@
       $(function(){
         $("#nav-placeholder").load("nav.htm");
         $("#sidebar-placeholder").load("sidebar.htm");
+        $("#footer-placeholder").load("footer.htm");
       });
     </script>
     <script src="js/handlebars.min-latest.js"></script>
