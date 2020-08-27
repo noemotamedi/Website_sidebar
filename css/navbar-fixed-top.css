@@ -221,3 +221,7 @@ img {
 .nav-link {
   text-align: center;
 }
+
+.nav-item:hover{
+  background: #efefef;
+}
