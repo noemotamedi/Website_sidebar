@@ -582,16 +582,31 @@ Main content
   }
 }
 
-/* Latest News Section */
 
- .carousel-img {
-   margin: auto;
-   width: 100%;
-   min-width: 178px;
-   max-width: 178px;
- }
+/* People Section */
+.column-peopleimg {
+  float: left;
+  width: 45%;
+  height: max-content;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
 
+.column-peopletext {
+  float: left;
+  width: 25%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
 
+.people-text {
+  font-family: "Work Sans";
+  font-size: 12pt;
+  font-weight: 500;
+  text-align: left;
+}
 
 /* --------------------------------
 
