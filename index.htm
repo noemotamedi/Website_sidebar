@@ -18,18 +18,7 @@
 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!--Latest News JavaScript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".carousel-inner").mouseover(function(){
-          $(".carousel-caption").css("box-shadow", "0 0 20px black");
-        });
-        $(".carousel-inner").mouseout(function(){
-          $(".carousel-caption").css("box-shadow", "0 0 20px transparent");
-        });
-      });
-    </script>
+
   </head>
   <body>
     <div id="nav-placeholder"></div>
@@ -54,18 +43,20 @@
 
     <main role="main" class="container">
 
-      <div class="row">
-        <div class="col-md-5 offset-md-1">
-          <div class="heading-home"><a href=latestnews.htm>Latest News</a></div>
-	  <div class="heading-home padded-top">April 2020: Achuta wins Google Faculty Award</div>
-	  <div class="body">To support clinical translation of imaging projects.</div>
-          <div class="heading-home padded-top">April 2020: 2 Papers, Tutorial at CVPR 2020</div>
-          <div class="body">Tutorial on <a href="visualphysicstutorial.htm">Visual Physics</a>.</div>
-          <div class="heading-home padded-top">October 2019: Pradyumna wins IIT Gold Medal</div>
-          <div class="body">PhD student Pradyumna Chari wins IIT-Madras President of India Gold Medal.</div>
-          <div class="heading-home padded-top">May 2019: Paper Presentation</div>
-          <div class="body">VMG student Yiqin Wang presents paper in Japan.</div>
-          <br>
+      <div class="col-md-5 offset-md-1">
+ <!--       <div class="heading-home" style="display:inline;font-size:25px;color:#3366BB;">Latest News</a></div>
+        <div class="heading-home padded-top">April 2020: Achuta wins Google Faculty Award</div>
+        <div class="body">To support clinical translation of imaging projects.</div>
+        <div class="heading-home padded-top">April 2020: 2 Papers, Tutorial at CVPR 2020</div>
+        <div class="body">Tutorial on <a href="visualphysicstutorial.htm">Visual Physics</a>.</div>
+        <div class="heading-home padded-top">October 2019: Pradyumna wins IIT Gold Medal</div>
+        <div class="body">PhD student Pradyumna Chari wins IIT-Madras President of India Gold Medal.</div>
+        <div class="heading-home padded-top">May 2019: Paper Presentation</div>
+        <div class="body">VMG student Yiqin Wang presents paper in Japan.</div>
+        <br>-->
+
+        <div style="margin-left: 20%;">
+           <div id="newsCarousel-placeholder"></div>
         </div>
 
 <!--   &#45;&#45;Carousel Code-->
@@ -159,25 +150,13 @@
 <!--        </div>-->
 
 
-        <div class="col-md-5 offset-md-1" style = "position:relative;">
-          <div class="heading-home"><a href=#>Current Teaching</a></div>
-          <div class="heading-home padded-top">Winter 2020</div>
-          <div class="body">EE 211: Digital Image Processing</div>
-          <div class="heading-home padded-top">Fall 2019</div>
-          <div class="body">CS 188: Intro to Computer Vision</div>
-          <div class="heading-home padded-top">Spring 2019</div>
-          <div class="body">EE 102: Signals and Systems</div>
-          <!--<div class="heading-home padded-top">Winter 2019</div>-->
-          <!--<div class="body">EE 211: Digital Image Processing</div>-->
-          <!--<div class="heading-home padded-top">Spring 2019</div>-->
-          <!--<div class="body">TBD</div>-->
-          <br>
-        </div>
+
       </div>
     </main> <!-- container -->
 
     </div>
     <div class="sidebar-rightcolumn">
+        <br><br><br>
       <div id="sidebar-placeholder"></div>
     </div>
     </div>
@@ -196,6 +175,7 @@
         $("#nav-placeholder").load("nav.htm");
         $("#footer-placeholder").load("footer.htm");
         $("#sidebar-placeholder").load("sidebar.htm");
+        $("#newsCarousel-placeholder").load("newsCarousel.htm");
       });
     </script>
   </body>
